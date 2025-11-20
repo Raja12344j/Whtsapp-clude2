@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(90deg,#330000,#440000);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+.card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #1b0a0a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 16px 0;
+  border-radius: 8px;
+  border: 2px solid #ff6b00;
+  background: #2b0f0f;
+  color: #fff;
+  box-sizing: border-box;
+}
+.buttons { display: flex; gap: 12px; }
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #ff8a00;
+  cursor: pointer;
+}
+.logs {
+  height: 240px;
+  overflow: auto;
+  background: #000;
+  padding: 8px;
+  border-radius: 6px;
+  color: #8f8f8f;
+}
