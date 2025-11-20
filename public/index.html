@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WhatsApp Automation Panel</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>WhatsApp Automation Panel</h1>
+
+    <label>Target Type</label>
+    <select id="targetType">
+      <option value="number">Number</option>
+      <option value="group">Group</option>
+    </select>
+
+    <label>Target (number or group id)</label>
+    <input id="targetId" placeholder="e.g. 919812345678 or 12345@g.us" />
+
+    <label>Messages File (.txt) — one message per line</label>
+    <input type="file" id="messagesFile" accept=".txt" />
+
+    <label>Interval (seconds)</label>
+    <input id="intervalSeconds" type="number" value="10" min="1" />
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+
+    <h3>Logs</h3>
+    <div id="logs" class="logs">No logs yet.</div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
